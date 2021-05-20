@@ -1,0 +1,51 @@
+.nav {
+  grid-area: nav;
+  padding-right: 15px;
+}
+
+.navWrap {
+  background-color: #fff;
+  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 5%);
+}
+
+.caption {
+  margin-bottom: 5px;
+  padding-left: 25px;
+  font-weight: 600;
+  color: #adb5bd;
+  font-size: 12px;
+}
+
+.navWrap ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.navWrap li {
+  list-style: none;
+  margin: 1px 5px;
+}
+
+.menuItem {
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #888;
+  text-decoration: none;
+}
+
+.item a.activeLink {
+  color: rgb(0, 85, 255);
+}
+
+.friendsWrap {
+  display: flex;
+  justify-content: center;
+}

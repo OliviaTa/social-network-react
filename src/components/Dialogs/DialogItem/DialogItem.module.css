@@ -1,0 +1,22 @@
+.dialog {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.avatar {
+  margin: 0 0.5rem 0 0;
+}
+
+.avatar img {
+  width: 35px;
+  vertical-align: middle;
+}
+
+.name {
+  color: #6c757d;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
