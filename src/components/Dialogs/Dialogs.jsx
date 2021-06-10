@@ -4,19 +4,18 @@ import classes from './Dialogs.module.css';
 import Message from './Message/Message';
 
 const Dialogs = (props) => {
-
     let dialogsElements = props.state.dialogs.map(dialog => <DialogItem key={dialog.id} name={dialog.name} id={dialog.id} img={dialog.img} />);
     let messagesElements = props.state.messages.map(message => <Message key={message.id} message={message.message} user={message.user} avatar={message.avatar} currentUser={props.currentUser} />);
 
     let newMessageElement = React.createRef();
 
     const sendMessage = () => {
-        props.updateState.addMessage();
+        props.dispatch({ type: 'ADD-MESSAGE' });
     };
 
     const onMessageChange = () => {
         const text = newMessageElement.current.value;
-        props.updateState.updateNewMessageText(text);
+        props.dispatch({ type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text });
     };
 
     return (
